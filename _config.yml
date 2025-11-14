@@ -1,4 +1,4 @@
-title: Knowledge Hub Template
+title: NMNH Knowledge Hub
 description: A knowledge hub template based on minimal-mistakes
 repository: adamancer/knowledge-hub-template
 theme: minimal-mistakes-jekyll
@@ -14,6 +14,9 @@ search: true
 search_full_content: true
 lunr:
   search_within_pages: true
+
+sass:
+  quiet_deps: true
 
 collections_dir: collections
 collections:

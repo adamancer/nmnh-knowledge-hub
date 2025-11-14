@@ -1,0 +1,5 @@
+- term: Custom Term
+  definition: The definition for a term not from an external authority
+- term: Custom Acronym
+  acronym: CA
+  definition: A term with an acronym

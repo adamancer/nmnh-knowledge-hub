@@ -31,7 +31,7 @@ Metadata for the file `writing-documentation.md` might look like this:
 title: Writing documentation
 status: draft
 last_modified_at: 2025-04-21
-topics: [documentation]
+tags: [documentation]
 ---
 ```
 
@@ -72,10 +72,10 @@ Link to a page in a collection:
 
 #### Widgets
 
-Include a list of related pages matching one or more topics:
+Include a list of related pages matching one or more tags:
 
 ```
-{% include related_list topics='manage data|share data' %}
+{% include related_list tags='manage data|share data' %}
 ```
 
 Include a 

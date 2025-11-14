@@ -1,8 +1,8 @@
 <aside class="sidebar__right">
 <header><h4 class="nav__title">Facets</h4></header>
 <ul>
-{% for topic in site.data.topics %}
-  <li>{{ topic }}</li>
+{% for tag in site.data.tags %}
+  <li>{{ tag }}</li>
 {% endfor %}
 </ul>
 </aside>

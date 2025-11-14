@@ -5,5 +5,6 @@
 __pycache__
 _site
 
+_data/resources-updated
+_data/indexed.yml
 _data/navigation.yml
-_data/tags.yml

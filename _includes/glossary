@@ -1,0 +1,27 @@
+{%- capture term -%}
+{%- if include.namespace.blank? -%}
+{{ include.term | downcase }}
+{%- else -%}
+{{ include.namespace | downcase }}:{{ include.term | downcase }}
+{%- endif -%}
+{%- endcapture -%}
+
+{%- for file_hash in site.data["glossaries"] -%}
+{%- assign entries = file_hash[1] -%}
+{%- for entry in file_hash[1] -%}
+
+{%- capture eterm -%}
+{%- if entry.namespace.blank? -%}
+{{ entry.term | downcase }}
+{%- else -%}
+{{ entry.namespace | downcase }}:{{ entry.term | downcase }}
+{%- endif -%}
+{%- endcapture -%}
+
+{%- assign plural = eterm | append: 's' -%}
+{%- if term == eterm or term == plural  -%}
+{%- if entry.url -%}<a class="external tooltip" href="{{ entry.url }}">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></a>{%- else - %}<span class="tooltip">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></span>{%- endif -%}
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endfor -%}

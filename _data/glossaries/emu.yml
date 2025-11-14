@@ -1,0 +1,763 @@
+- term: AdmGUIDIsPreferred_tab
+  display: Preferred
+  definition: Whether the globally unique identifier (GUID) or persistent identifier
+    (PID) is preferred
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/alladmtab#AdmGUIDIsPreferred_tab
+- term: AdmGUIDType_tab
+  display: Type
+  definition: The type of globally unique identifier (GUID) or persistent identifier
+    (PID)
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/alladmtab#AdmGUIDType_tab
+- term: AdmGUIDValue_tab
+  display: GUID
+  definition: A globally unique identifier (GUID) or persitent identifier (URL) that
+    uniquely identifies the item represented by the record
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/alladmtab#AdmGUIDValue_tab
+- term: AdmPublishWebNoPassword
+  display: Publish on Internet
+  definition: Whether the record can be shared publicly, for example, on a public
+    website or with a data aggregator
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allsectab#AdmPublishWebNoPassword
+- term: AdmPublishWebPassword
+  display: Publish on Intranet
+  definition: Whether the record can be shared internally on the Smithsonian network
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allsectab#AdmPublishWebPassword
+- term: BioEventSiteRef
+  display: Locality
+  definition: The collection event
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#BioEventSiteRef
+- term: BioLiveSpecimen
+  display: Lot Description
+  definition: A description of the specimen or lot
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#BioLiveSpecimen
+- term: CatPrefix
+  display: Prefix
+  definition: An alphabetic prefix to the catalog number, typically used to identify
+    a department or collection
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allcattab#CatPrefix
+- term: CollapseEmptyValues
+  display: Collapse Empty Values?
+  definition: Where field values are empty, this defines whether their corresponding
+    separator should be dropped.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#CollapseEmptyValues
+- term: DefinedTerm_tab
+  display: Defined Term
+  definition: Allows a term previously defined in a standard to be used in constructing
+    this term.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#DefinedTerm_tab
+- term: DetCollectionName_tab
+  display: Collection Name
+  definition: A group of multimedia records with a common feature
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetCollectionName_tab
+- term: DetContributor_tab
+  display: Other Contributor(s)
+  definition: Other people or organizations that contributed to the creation or digitization
+    of the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetContributor_tab
+- term: DetCoverage
+  display: Coverage
+  definition: The extent or scope of the content of the resource
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetCoverage
+- term: DetDate0
+  display: Date
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetDate0
+- term: DetLanguage_tab
+  display: Language
+  definition: The primary language used in the title or content of the multimedia
+    resource
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetLanguage_tab
+- term: DetPublisher
+  display: Publisher
+  definition: The publisher of the multimedia resource, i.e. the party responsible
+    for making the resource publicly available.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetPublisher
+- term: DetRelation_tab
+  display: Relation
+  definition: Related assets, records, or resources
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetRelation_tab
+- term: DetResourceType
+  display: Resource Type
+  definition: A general category for the content of the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetResourceType
+- term: DetRights
+  display: Internal Rights Notes
+  definition: Private rights notes, for example, those including PII
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetRights
+- term: DetSIRestrictionUser_tab
+  display: SD 609 Restrictions
+  definition: List of restriction categories defined in [SD609](https://sinet.sharepoint.com/:b:/r/sites/Prism-OPMB/SD/SD609.pdf)
+    that apply to the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetSIRestrictionUser_tab
+- term: DetSIRightsNotes
+  display: SI Rights/Usage Notes
+  definition: Public-facing rights notes
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetSIRightsNotes
+- term: DetSIRightsStatement
+  display: SI Rights/Usage Statement
+  definition: The rights/usage category for the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetSIRightsStatement
+- term: DetSource
+  display: Source
+  definition: The unit that controls the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetSource
+- term: DetSubject_tab
+  display: Subject/Keywords
+  definition: Descriptive terms to enable search and retrieval
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/alldettab#DetSubject_tab
+- term: Field_tab
+  display: Field
+  definition: The EMu field from which the data is extracted to generate this term.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#Field_tab
+- term: FormatSeparator_tab
+  display: Format Separator
+  definition: Where more than one field is used in a definition, this defines the
+    text to be used to join this field with the previous. If no value is specified
+    the separator will default to the space character.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#FormatSeparator_tab
+- term: FormatSpecifier
+  display: Format Specifier
+  definition: Defines whether the term is to be formatted using the Term Format String
+    or a Script.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#FormatSpecifier
+- term: Format_tab
+  display: Format
+  definition: Allows selection of a predefined reformatting function to be applied
+    to the data, such as titlecase or date reformatting.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#Format_tab
+- term: LocContainerSize
+  display: Container size
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocContainerSize
+- term: LocContainerType
+  display: Container type
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocContainerType
+- term: LocDateMoved0
+  display: Date Moved
+  definition: Either the date the specimen was moved or the date the location was
+    updated
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocDateMoved0
+- term: LocLocationRef_tab
+  display: Current Location
+  definition: Used to record short-term locations, like a temporary exhibit or temporary
+    housing during a move
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocLocationRef_tab
+- term: LocMovedByRef_tab
+  display: Moved By
+  definition: The person who performed the move
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocMovedByRef_tab
+- term: LocMovementNotes_tab
+  display: Movement Notes
+  definition: General remarks about an update to the location history
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocMovementNotes_tab
+- term: LocNumberDrawersUsed
+  display: No. of drawers used
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocNumberDrawersUsed
+- term: LocPermanentLocationRef
+  display: Permanent Location
+  definition: The location in the collection where the specimen is stored
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/alllocnmnhtab#LocPermanentLocationRef
+- term: MetConditionDetermination
+  display: Condition Determination
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MetConditionDetermination
+- term: MetFindFall
+  display: Find/Fall
+  definition: Whether the meteorite fall was observed
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MetFindFall
+- term: MetMeteoriteName
+  display: Meteorite Name
+  definition: The name of a meteorite or split
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MetMeteoriteName
+- term: MetMeteoriteType
+  display: Classification
+  definition: The type of meteorite
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MetMeteoriteType
+- term: MetRecordNumber
+  display: Record Number
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MetRecordNumber
+- term: MetSynonym
+  display: Synonym
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MetSynonym
+- term: MinSpecimenType
+  display: Item Type
+  definition: The type of sample or preparation
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allmettab#MinSpecimenType
+- term: ModuleInsert
+  display: Module
+  definition: The name of the module storing the required data.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#ModuleInsert
+- term: MulCreator_tab
+  display: Creator
+  definition: The creators of the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/allmultab#MulCreator_tab
+- term: MulDescription
+  display: Description
+  definition: A description or caption for the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/allmultab#MulDescription
+- term: MulIdentifier
+  display: Identifier
+  definition: The filename of the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/allmultab#MulIdentifier
+- term: MulMimeFormat
+  display: MIME Format
+  definition: The file type of the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/allmultab#MulMimeFormat
+- term: MulMimeType
+  display: MIME Type
+  definition: The MIME type of the asset
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/allmultab#MulMimeType
+- term: MulTitle
+  display: Title
+  definition: A brief synopsis of the caption
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/emultimedia/allmultab#MulTitle
+- term: NestedSeparator_tab
+  display: Nested Separator
+  definition: Where nested tables are used to generate the data for this definition,
+    the separator to use between each of the generated rows. If no value is specified
+    the separator will default to the pipe character.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#NestedSeparator_tab
+- term: NteAttributedToRef_nesttab
+  display: Attributed To
+  definition: The author(s) of the note
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allntetab#NteAttributedToRef_nesttab
+- term: NteDate0
+  display: Date
+  definition: The date the note was created or modified
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allntetab#NteDate0
+- term: NtePublishWeb_tab
+  display: Publish
+  definition: Whether the note should be published
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allntetab#NtePublishWeb_tab
+- term: NteText0
+  display: Note
+  definition: The text of the note
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allntetab#NteText0
+- term: NteType_tab
+  display: Kind
+  definition: The type of note
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allntetab#NteType_tab
+- term: RecordType
+  display: Record Type
+  definition: Used to define whether the record is of type "Term Definition" or "Standard".
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#RecordType
+- term: RefAbbreviatedTitle
+  display: Abbreviated Title
+  definition: The abbreviated title of a journal
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefAbbreviatedTitle
+- term: RefChapter
+  display: Chapter
+  definition: The chapter number
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefChapter
+- term: RefCitationText
+  display: Citation Text
+  definition: A snippet of text from the work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefCitationText
+- term: RefContributorsRef_tab
+  display: Authors/Contributors
+  definition: The authors (for most works) and editors (for books or chapters) of
+    the work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefContributorsRef_tab
+- term: RefContributorsRole_tab
+  display: Role
+  definition: The role of a contributor in creating the work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefContributorsRole_tab
+- term: RefDataProvider
+  display: Provider
+  definition: The source that provided the data
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefDataProvider
+- term: RefDataSource
+  display: Source
+  definition: The kind of data provider
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefDataSource
+- term: RefDate
+  display: Date
+  definition: The date of publication or, for regularly updated works like websites,
+    the last modified date
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefDate
+- term: RefDateRange
+  display: Date Range
+  definition: The verbatim date of publication
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefDateRange
+- term: RefEdition
+  display: Edition
+  definition: The edition of a book
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefEdition
+- term: RefFiguresPlates
+  display: Figures/Plates
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefFiguresPlates
+- term: RefFormat
+  display: Format
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefFormat
+- term: RefIssue
+  display: Issue
+  definition: The issue of a journal in which an article appears
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefIssue
+- term: RefJournalBookTitle
+  display: Journal/Book Title
+  definition: The name of the journal (for articles) or book (for books or chapters)
+    in which the work appears
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefJournalBookTitle
+- term: RefKeywords_tab
+  display: Subject/Keywords
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefKeywords_tab
+- term: RefLanguage
+  display: Language
+  definition: The primary language of the work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefLanguage
+- term: RefLastAccessDate
+  display: Last Access Date
+  definition: The date on which the website was last accessed
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefLastAccessDate
+- term: RefLocationRef
+  display: Location
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefLocationRef
+- term: RefManuscript
+  display: Manuscript
+  definition: Whether the work is a manuscript, that is, an unpublished work or a
+    pre-publication version of a work that was ultimately published
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefManuscript
+- term: RefOtherIdentifierSource_tab
+  display: Source
+  definition: The type of a book or journal identifier, like an ISBN or ISSN
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefOtherIdentifierSource_tab
+- term: RefOtherIdentifier_tab
+  display: Value
+  definition: The identifier for a book or journal, like an ISSN or ISBN
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefOtherIdentifier_tab
+- term: RefPage
+  display: Page
+  definition: The page or pages cited from within the larger work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefPage
+- term: RefPages
+  display: Pages
+  definition: The page range (for a chapter or article) or number of pages (for a
+    book)
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefPages
+- term: RefProject_tab
+  display: Project
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefProject_tab
+- term: RefPublicationCity
+  display: Publication City
+  definition: The city in which the publisher is located
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefPublicationCity
+- term: RefPublicationSubtype
+  display: Subtype
+  definition: The subtype of work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefPublicationSubtype
+- term: RefPublicationType
+  display: Type
+  definition: The type of work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefPublicationType
+- term: RefPublisherRef
+  display: Publisher
+  definition: The entity that published a book
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefPublisherRef
+- term: RefRightsRef
+  display: Rights
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefRightsRef
+- term: RefScale
+  display: Scale
+  definition: The ratio of the distance on a map to actual distance
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefScale
+- term: RefSeries
+  display: Series
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefSeries
+- term: RefSeriesTitle
+  display: Series Title
+  definition: The name of the book series in which a book appears
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefSeriesTitle
+- term: RefTitle
+  display: Article/Resource Title
+  definition: The title of the work
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref1tab#RefTitle
+- term: RefVolume
+  display: Volume
+  definition: The volume of a journal in which an article appears
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefVolume
+- term: RefWebSiteIdentifier
+  display: Website Identifier
+  definition: The URL used to access a website
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ebibliography/allref2tab#RefWebSiteIdentifier
+- term: RemoveDuplicateValues
+  display: Remove Duplicate Values?
+  definition: Where the same field value appears more than once, this defines whether
+    to remove duplicates.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#RemoveDuplicateValues
+- term: RowInclusion_tab
+  display: Row Inclusion
+  definition: Defines which row(s) to include when the field is a nested table.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#RowInclusion_tab
+- term: SecRecordStatus
+  display: Record Status
+  definition: .nan
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/all/allsectab#SecRecordStatus
+- term: StaAccessionStatus
+  display: Accession status
+  definition: Whether a specimen has been accessioned
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaAccessionStatus
+- term: StaInventoryCollectionName
+  display: Inventory Collection Name
+  definition: The collection name for the purpose of cyclical inventories
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryCollectionName
+- term: StaInventoryCurrent_tab
+  display: Current
+  definition: Whether the current row is the most current inventory
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryCurrent_tab
+- term: StaInventoryDate0
+  display: Date Recorded
+  definition: The date of the inventory
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryDate0
+- term: StaInventoryRecordedByRef_tab
+  display: Recorded By
+  definition: The person or people who conducted the inventory
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryRecordedByRef_tab
+- term: StaInventoryRemarks_tab
+  display: Remarks
+  definition: Additional details about the inventory event
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryRemarks_tab
+- term: StaInventoryStatus_tab
+  display: Inventory Status
+  definition: The result of the inventory
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryStatus_tab
+- term: StaInventoryType_tab
+  display: Inventory Type
+  definition: The type of inventory
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaInventoryType_tab
+- term: StaPrimaryCollection
+  display: Primary Collection
+  definition: The primary collection used for reporting
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaPrimaryCollection
+- term: StaRecordDate0
+  display: Date Recorded
+  definition: The date the status was recorded
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaRecordDate0
+- term: StaRecordQuality
+  display: Record Quality
+  definition: A numeric indicator for the quality and completeness of the record
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaRecordQuality
+- term: StaRecordRecordedByRef_tab
+  display: Recorded By
+  definition: The person who recorded the status
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaRecordRecordedByRef_tab
+- term: StaRecordRemarks_tab
+  display: Remarks
+  definition: Additional details about the record status
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaRecordRemarks_tab
+- term: StaRecordStatus_tab
+  display: Record Status
+  definition: Captures information about the creation and review of the record
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaRecordStatus_tab
+- term: StaTMStatus
+  display: TM status
+  definition: Whether the specimen has been loaned or discarded
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/ecatalogue/allstatab#StaTMStatus
+- term: StandardName
+  display: Standard Name
+  definition: The name of the standard the definition applies to.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#StandardName
+- term: StandardVersion
+  display: Version
+  definition: The version of the standard the definition is compliant with.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#StandardVersion
+- term: Status
+  display: Status
+  definition: Indicates whether the term is active, and hence should be included in
+    the export of a standard.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#Status
+- term: Term
+  display: Term
+  definition: The name of the term within the standard. The value entered into this
+    field must be unique.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#Term
+- term: TermFormatString
+  display: Term Format String
+  definition: A string allowing custom formatting of output. This format string uses
+    same syntax as the "Perl" printf statement.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#TermFormatString
+- term: TermURI
+  display: Term URI/IRI
+  definition: The URI of a resource comprising a definition of the term.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#TermURI
+- term: TypeOfWhere
+  display: Type Of Where
+  definition: Defines how the Where rules are applied. Allows selection of a row from
+    a double nested table.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#TypeOfWhere
+- term: WhereBetweenValue_nesttab
+  display: Between Value
+  definition: If the emu:WhereCondition_nesttab is Between, the upper bound of the
+    between comparison.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#WhereBetweenValue_nesttab
+- term: WhereCondition_nesttab
+  display: Condition
+  definition: The condition to be used to match the table row.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#WhereCondition_nesttab
+- term: WhereField_nesttab
+  display: Field
+  definition: The EMu field to search to choose a table row.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#WhereField_nesttab
+- term: WhereOperator
+  display: Operator
+  definition: Defines whether to combine where clauses with an AND or an OR.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#WhereOperator
+- term: WhereValue_nesttab
+  display: Value
+  definition: The value to test against the condition. If the emu:WhereCondition_nesttab
+    is Between, this is the lower bound.
+  namespace: emu
+  source: EMu
+  url: /reference-guides/emu/estandards/alldeftab#WhereValue_nesttab

@@ -73,27 +73,36 @@ layout: default
                 </nav>
               {% endif %}
               <nav class="toc">
-                <header><h4 class="nav__title">{{ tag[0] | capitalize | replace: "Tags", "Topics" }}<img class="sortFacet alpha" src="{{ '/assets/images/ri--sort-alphabet-asc.png' | relative_url }}"><img class="sortFacet count selected" src="{{ '/assets/images/ri--sort-number-asc.png' | relative_url }}"></h4></header>
+                <header><h2 class="nav__title">{{ tag[0] | capitalize }}<img class="sortFacet alpha" src="{{ '/assets/images/ri--sort-alphabet-asc.png' | relative_url }}"><img class="sortFacet count selected" src="{{ '/assets/images/ri--sort-number-asc.png' | relative_url }}"></h2></header>
                 <ul id="{{ tag[0] }}" class="toc__menu faceted">
               {% assign last = tag[0] %}
             {% endif %}
-            <li><a href="{{ page.url | split: "." | first | append: "?topic=" | append: tag[1] | replace: " ", "-" | relative_url }}">{{ tag[1] }}</a></li>
+            <li><a href="{{ page.url | split: "." | first | append: "?tag=" | append: tag[1] | replace: " ", "-" | relative_url }}">{{ tag[1] }}</a></li>
           {% endfor %}
             </ul>
           </nav>
+          <button id="reset">Reset filters</button>
         </aside>
         {% if page.status != "published" %}
         <div class="notice--warning">
-          The content on this page has not been finalized. Contributors can mark a page as complete and remove this warning by adding <code>status: published</code> to the front matter in the Markdown source file.
+          <p>The content on this page has not been finalized. Contributors can mark a page as complete and remove this warning by adding <code>status: published</code> to the front matter in the Markdown source file.</p>
         </div>
         {% endif %}
+        {% if page.last_modified_at == nil %}
+        <div class="notice--warning">
+          <p>No modified date was found for this page. Please add <code>last_modified_at: yyyy-mm-dd</code> to the front matter in the Markdown source file.</code></p>
+        </div>
+        {% endif %}
+        {% if page.description -%}
+          {{ page.description | markdownify | replace: '<p>', '<p class="description">' }}
+        {%- endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+          <h2 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h2>
         {% endif %}
         {% include page__taxonomy.html %}
         {% include page__date.html %}
