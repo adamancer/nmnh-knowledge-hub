@@ -1,24 +1,10 @@
 """Creates and indexes pages based using YAML files in _data"""
 
-import re
-import shutil
-from pathlib import Path
-
-import html5lib
-import pandas as pd
-import requests
 import yaml
-from bs4 import BeautifulSoup
 
-try:
-    import requests_cache
-except ModuleNotFoundError:
-    pass
-
-from const import BASEPATH, GLOSSARY
+from const import BASEPATH
 from utils import (
     add_tooltips,
-    autodate,
     build_nav,
     compute_urls,
     index_tags,
