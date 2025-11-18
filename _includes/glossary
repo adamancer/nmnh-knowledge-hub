@@ -1,3 +1,5 @@
+{%- capture base_url %}{{ site.url }}{{ site.base_url }}{% endcapture %}
+
 {%- capture term -%}
 {%- if include.namespace.blank? -%}
 {{ include.term | downcase }}
@@ -20,7 +22,15 @@
 
 {%- assign plural = eterm | append: 's' -%}
 {%- if term == eterm or term == plural  -%}
-{%- if entry.url -%}<a class="external tooltip" href="{{ entry.url }}">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></a>{%- else - %}<span class="tooltip">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></span>{%- endif -%}
+{%- if entry.url -%}
+    {%- if entry.url contains "https://" -%}
+        <a class="external tooltip" href="{{ entry.url }}">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></a>
+    {%- else -%}
+        <a class="tooltip" href="{{ entry.url }}">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></a>
+    {%- endif -%}
+{%- else - %}
+    <span class="tooltip">{{ include.term }}<span class="tooltiptext">{{ entry.definition }}</span></span>
+{%- endif -%}
 {%- break -%}
 {%- endif -%}
 {%- endfor -%}
