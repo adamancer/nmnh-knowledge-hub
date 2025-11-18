@@ -1,6 +1,6 @@
 title: NMNH Knowledge Hub
 description: A knowledge hub template based on minimal-mistakes
-repository: adamancer/knowledge-hub-template
+repository: adamancer/nmnh-knowledge-hub
 theme: minimal-mistakes-jekyll
 exclude: [scripts, templates]
 
