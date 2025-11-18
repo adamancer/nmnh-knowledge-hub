@@ -303,6 +303,7 @@ def add_tooltips(path, glossary=None, exclude=(".github", "README.md", "vendor")
 
     if glossary is None:
         glossary = GLOSSARY
+    glossary = dict(sorted(glossary.items(), key=lambda kv: len(kv[0])))
 
     # Build pattern to find elements that should not include tooltips
     subpatterns = (
@@ -328,9 +329,8 @@ def add_tooltips(path, glossary=None, exclude=(".github", "README.md", "vendor")
             print(f" {path}: Skipped tooltip check")
             continue
 
-        # Create a copy of the glossary. Terms are removed as they are found so that
-        # only the first occurrence in each document has the tooltip.
-        glossary_ = glossary.copy()
+        # Terms are tracked as they are found so only the first occurrence is linked
+        # unless highlight_all_terms is set to true in the front matter
         found = {}
 
         with open(path, encoding="utf-8") as f:
@@ -340,10 +340,11 @@ def add_tooltips(path, glossary=None, exclude=(".github", "README.md", "vendor")
                 raise ValueError(f"No YAML header: {path}") from exc
             else:
                 fm_ = yaml.safe_load(fm)
+            highlight_all = fm_.get("highlight_all_terms")
             parts = re.split(pattern, content)
             for i, part in enumerate(parts):
                 if not re.match(pattern, part):
-                    for key in sorted(glossary_, key=len):
+                    for key, val in glossary.items():
                         # Find the first match for the term in the part
                         match = re.search(rf"\b{key}s?\b", part, flags=re.I)
                         if match is not None:
@@ -353,12 +354,12 @@ def add_tooltips(path, glossary=None, exclude=(".github", "README.md", "vendor")
                                 namespace, term = term.split(":")
                             except ValueError:
                                 namespace = ""
-                            if fm_.get("highlight_all_terms") or not found.get(key):
+                            if highlight_all or not found.get(key):
                                 parts[i] = re.sub(
                                     rf"\b{match.group()}\b",
                                     f'{{% include glossary term="{term}" namespace="{namespace}" %}}',
                                     parts[i],
-                                    count=1,
+                                    count=0 if highlight_all else 1,
                                 )
                             part = parts[i]
                             found[key] = True
