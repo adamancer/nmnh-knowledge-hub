@@ -6,11 +6,12 @@ status: draft
 parent: Standards
 toc: true
 toc_sticky: true
-last_modified_at: 2025-11-14
+highlight_all_terms: true
+last_modified_at: 2026-01-08
 hash: 1f152f3c3e428e11be3cf6044115113f
 ---
 
-<p>Constructs a definition for a standard. Visible when emu:RecordType = "Term Definition".</p>
+<p>Constructs a definition for a standard. Visible when {% include glossary term="RecordType" namespace="emu" %} = "Term Definition".</p>
 <h2 id="standard_name">Standard Name</h2>
 <ul class="tdwg">
 <li><a href="#RecordType">Record Type</a></li>
@@ -266,7 +267,7 @@ hash: 1f152f3c3e428e11be3cf6044115113f
 
 <h3 class="tdwg" id="WhereValue_nesttab">Value</h3>
 <table class="tdwg">
-<tr><th>Definition</th><td><p>The value to test against the condition. If the emu:WhereCondition_nesttab is Between, this is the lower bound.</p></td></tr>
+<tr><th>Definition</th><td><p>The value to test against the condition. If the {% include glossary term="WhereCondition_nesttab" namespace="emu" %} is Between, this is the lower bound.</p></td></tr>
 <tr><th>Column</th><td><p>WhereValue_nesttab</p></td></tr>
 <tr><th>Format</th><td><p>Text</p></td></tr>
 <tr><th>Required</th><td><p>No</p></td></tr>
@@ -293,7 +294,7 @@ hash: 1f152f3c3e428e11be3cf6044115113f
 
 <h3 class="tdwg" id="WhereBetweenValue_nesttab">Between Value</h3>
 <table class="tdwg">
-<tr><th>Definition</th><td><p>If the emu:WhereCondition_nesttab is Between, the upper bound of the between comparison.</p></td></tr>
+<tr><th>Definition</th><td><p>If the {% include glossary term="WhereCondition_nesttab" namespace="emu" %} is Between, the upper bound of the between comparison.</p></td></tr>
 <tr><th>Column</th><td><p>WhereBetweenValue_nesttab</p></td></tr>
 <tr><th>Format</th><td><p>Text</p></td></tr>
 <tr><th>Required</th><td><p>No</p></td></tr>
